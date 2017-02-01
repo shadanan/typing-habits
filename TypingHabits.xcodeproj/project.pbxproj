@@ -12,6 +12,7 @@
 		732357DA1E00F95C00915B69 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 732357D81E00F95C00915B69 /* MainMenu.xib */; };
 		732357E51E00F95D00915B69 /* TypingHabitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732357E41E00F95D00915B69 /* TypingHabitsTests.swift */; };
 		732357F01E00F95D00915B69 /* TypingHabitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732357EF1E00F95D00915B69 /* TypingHabitsUITests.swift */; };
+		73280A391E41B6F300CCED21 /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73280A381E41B6F300CCED21 /* KeyCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		732357EB1E00F95D00915B69 /* TypingHabitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypingHabitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		732357EF1E00F95D00915B69 /* TypingHabitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingHabitsUITests.swift; sourceTree = "<group>"; };
 		732357F11E00F95D00915B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73280A381E41B6F300CCED21 /* KeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyCode.swift; path = ../KeyCode/Sources/KeyCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				732357D41E00F95C00915B69 /* AppDelegate.swift */,
+				73280A381E41B6F300CCED21 /* KeyCode.swift */,
 				732357D61E00F95C00915B69 /* Assets.xcassets */,
 				732357D81E00F95C00915B69 /* MainMenu.xib */,
 				732357DB1E00F95C00915B69 /* Info.plist */,
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73280A391E41B6F300CCED21 /* KeyCode.swift in Sources */,
 				732357D51E00F95C00915B69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -404,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

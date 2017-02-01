@@ -14,21 +14,20 @@ func eventCallback(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent, re
     let rightShiftOnly = 131332 as UInt64
     
     if type == .keyDown {
-        let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
+        let keyCode = KeyCode.from(CGEvent: event)
         let flags = event.flags.rawValue
         
-        print(keyCode)
-        
-        if flags == leftShiftOnly && [0,1,2,3,5,6,7,8,9,11,12,13,14,15,17].contains(keyCode) {
+        if flags == leftShiftOnly && "QWERTASDFGZXCVB".contains(keyCode.character) {
             let notification = NSUserNotification()
-            notification.title = "TypingHabits Blocked Left ⇧\(keyCode)"
+            notification.title = "TypingHabits Blocked \(keyCode)"
             NSUserNotificationCenter.default.deliver(notification)
             return nil
         }
         
-        if flags == rightShiftOnly && [4,16,31,32,34,35,37,38,39,40,41,43,44,45,46,47].contains(keyCode) {
+        
+        if flags == rightShiftOnly && "YUIOPHJKLNM".contains(keyCode.character) {
             let notification = NSUserNotification()
-            notification.title = "TypingHabits Blocked Right ⇧\(keyCode)"
+            notification.title = "TypingHabits Blocked \(keyCode)"
             NSUserNotificationCenter.default.deliver(notification)
             return nil
         }
